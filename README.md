@@ -47,8 +47,7 @@ Sentiment-Analysis-CLI/
 ├── models.py                  # Data models
 ├── sentiment_history.json     # Analysis history
 ├── Purpose.md                 # Project description
-├── workingPrinciple.txt       # Working principle
-└── README.md
+└── workingPrinciple.txt       # Working principle
 ```
 
 ---
