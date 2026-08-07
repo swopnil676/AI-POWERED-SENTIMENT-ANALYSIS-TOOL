@@ -1,0 +1,22 @@
+This project is a command-line sentiment analysis tool. Here's what it actually does:
+
+Core purpose: You give it text (a sentence, paragraph, or a file full of lines), and it tells you whether that text sounds Positive, Negative, or Neutral — using VADER (a rule-based sentiment analysis model from NLTK), fully offline, no API calls or internet needed after the initial lexicon download.
+
+What you can do with it (via the menu):
+
+Analyze a single sentence — type text, get its sentiment + scores back instantly.
+Analyze a whole file — point it at a .txt file with one sentence per line, and it scores every line in one go.
+View history — see every analysis you've ever run, since results are saved.
+View statistics — breakdown of how many results were Positive/Negative/Neutral, as percentages, plus an average sentiment score.
+Clear history — wipe saved results if you want a fresh start.
+Clear screen / Exit.
+
+How it's built (the architecture you now have split across files):
+
+models.py — defines what a "sentiment result" looks like (the data shape).
+repository.py — handles saving/loading results to/from sentiment_history.json, so your analysis history survives between runs.
+service.py — the actual brains: runs text through VADER, classifies it, computes stats.
+cli.py — the interactive menu you type into.
+main.py — wires it all together and starts the app.
+
+In short: it's a small, self-contained sentiment-tracking tool — think of it as a mini analytics log for "how does this text sound," with persistent history and basic reporting, built with clean separation between data, logic, storage, and UI.

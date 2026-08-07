@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "text": "Hello my name is swopnil biswas",
+    "sentiment": "Neutral",
+    "positive_score": 0.0,
+    "negative_score": 0.0,
+    "neutral_score": 1.0,
+    "compound_score": 0.0,
+    "analyzed_at": "2026-08-06 23:59"
+  }
+]
